@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <h1>Login</h1>
+    
+    {% if error %}
+        <p style="color: red;">{{ error }}</p>
+    {% endif %}
+
+    {% if info %}
+        <p style="color: green;">{{ info }}</p>
+    {% endif %}
+    
+    <form method="post" action="/login">
+        <label>Email: <input type="email" name="email" required></label><br>
+        <label>Password: <input type="password" name="password" required></label><br>
+        <input type="submit" value="Login">
+    </form>
+    
+    <p>Don't have an account? <a href="/register">Register here</a></p>
+    <p>Forgot password? <a href="/forgot_password">Reset here</a></p>
+</body>
+</html>
