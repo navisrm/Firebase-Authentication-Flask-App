@@ -1,5 +1,31 @@
 # Firebase-Authentication-Flask-App
 
+This project is a user authentication application built on the Python Flask framework, leveraging Firebase for secure and scalable user management. The application incorporates essential features for user authentication, ensuring a seamless and secure user experience.
+
+## Project Highlights:
+### Technology Stack:
+
+**Backend Framework:** Python Flask
+
+**Authentication Service:** Firebase
+### Features:
+
+**User Registration:**
+Users can sign up for the application, providing their email and password.
+Firebase Authentication services handle the user registration process.
+
+**Email Verification:**
+After registration, users receive a verification email to confirm their email address.
+Email verification is an essential step to enhance security and ensure valid user accounts.
+
+**User Sign-In:**
+Registered users can securely sign in using their email and password.
+Firebase handles the authentication process, verifying user credentials.
+
+**User Sign-Out:**
+Users can log out of their accounts to end their session securely.
+
+
 ## Firebase Setup
 
 1. Create a new project on the [Firebase Console](https://console.firebase.google.com/).
